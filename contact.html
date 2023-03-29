@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Christmas Store</title>
+	<link rel ="stylesheet" href="my_preprocessed_style.css" type="text/css"> 
+	<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.3/dist/tailwind.min.css" rel="stylesheet">
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/sweetalert2@10.3.5/dist/sweetalert2.min.css">
+<script src="https://cdn.jsdelivr.net/npm/sweetalert2@10.3.5/dist/sweetalert2.min.js"></script>
+	<style>
+		input[type=text]:focus {
+			background-color: lightblue;
+		}
+	</style>
+</head>
+
+<body>
+	<div id="main_content" class = 'animate-wobble bg-purple-200'>
+	<header role = "banner" class = 'relative'> 
+		<img src = "https://static.vecteezy.com/system/resources/previews/009/345/306/original/christmas-social-media-banner-with-realistic-pine-leaves-xmas-banner-with-colorful-balls-snowflakes-merry-christmas-banner-decoration-elements-with-snowflakes-christmas-balls-and-typography-free-png.png" id = "image" alt = 'image'>
+		</header> 
+	<nav>
+		<ul class = ' place-items-center bg-purple-200 flex justify-center list-none mt-0 p-0' >
+		<li> <a href = 'index.html'>Home</a></li>
+		<li> <a href = 'contact.html'>Contact us </a></li>
+		<li> <a href = 'deals.html'>Today's Deals </a></li>
+		</ul>
+		</nav>
+		<article>
+			
+			<form method = "post" style="background-image:url('https://cdn.pixabay.com/photo/2017/10/26/19/45/red-2892235__340.png'); z-index: -1; background-size: cover;
+			background-color: rgba(255, 255, 255, 0.75);
+			padding: 20px;">
+				<h1>Contact Us</h1>
+				<p class = 'pwd bg-blue-50' style = "background-color: skyblue; font-family: 'Courier New', Courier, monospace;"> </p><p class = 'labels'> Password:</p>
+				<input class = 'bg-blue-50 type' type =  "password" id = "pwd" name = "pwd" value = "" size = 100> <br>
+				<p class = ' fname bg-blue-50' style = 'font-family: Times New Roman;background-color: skyblue; '></p><p class = 'labels'> First name:</p>
+				<input class = 'bg-blue-50' type = "text" id = "fname" name = "fname" value = "John" size = 100> <br>
+				<p  class = 'lname bg-blue-50' style = 'font-family: Arial, Helvetica, sans-serif;background-color: skyblue;'> </p><p class = 'labels'>Last name: </p> <br>
+				<input class = 'bg-blue-50' type = "text" id = "lname" name = "lname" value = "Doe" > <br>
+				<p class = 'email bg-blue-50' style = 'background-color: skyblue;'></p> <p class = 'labels'>Email: </p> <br>
+				<input type = "text" id = "email" name = "email" value = "gmartini2019@my.fit.edu"> <br>
+				<p class = 'message bg-blue-50' style = 'font-family:Verdana, Geneva, Tahoma, sans-serif; background-color: skyblue;'> </p><p class = 'labels'>Message:</p> <br>
+				<input type = "text" class = 'bg-blue-50' id = "message" name = "message" value = "Write your message here..."> <br>
+				<button  class="submit-button bg-violet-500 hover:bg-violet-600 text-white font-bold py-2 px-4 rounded">
+					Submit
+				  </button>
+			</form>
+		</article>
+	<footer class = 'text-center'>
+		<p> &copy; Giulio Martini</p>
+	</footer>
+	<a href="http://validator.w3.org/check?uri=referer">Validate</a> 	
+	
+	<script>
+const submitButton = document.querySelector(".submit-button");
+submitButton.addEventListener("click", function() {
+  event.preventDefault();
+  console.log("Button clicked");
+  Swal.fire({
+    title: 'Merry Christmas!',
+    text: 'Form submitted successfully!',
+    icon: 'success',
+    confirmButtonText: 'Ho Ho Ho!',
+    confirmButtonClass: 'bg-violet-500 hover:bg-violet-600 text-white font-bold py-2 px-4 rounded',
+    background: '#F7E4FB',
+    showCloseButton: true,
+    showCancelButton: false,
+    focusConfirm: false,
+    customClass: {
+      container: 'p-10',
+      popup: 'bg-violet-200 rounded-lg',
+      header: 'text-violet-800',
+      title: 'text-2xl font-bold',
+      content: 'text-violet-800',
+      }
+  }).then(function() {
+  window.location.href = "index.html";
+});
+})
+	
+	  </script>
+	  </div>
+</body>
+</html>

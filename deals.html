@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Christmas Store</title>
+	<link rel ="stylesheet" href="my_preprocessed_style.css" type="text/css">
+	<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.3/dist/tailwind.min.css" rel="stylesheet">
+ 
+	<style>
+		table {
+    border-collapse: collapse;
+	animation-name: anim;
+  animation-duration: .2s;
+  animation-iteration-count: infinite;
+  }
+  
+  tbody tr:nth-child(odd) {
+    background-color: #908484; 
+  }
+  
+  th {
+    background-color: #242323; 
+    color: #f5a7a7;
+    font-weight: bold; 
+  }
+  
+  td, th {
+    border: 1px solid #ee4646; 
+    padding: 8px;
+  }
+  tr:hover {
+  font-weight: bold; 
+}
+#deals{
+	display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr ;
+    border: 1px solid violet;  
+}
+.fdeals:hover{
+	transform: scale(1.25);
+}
+@keyframes anim {
+  from {background-color: violet;}
+  to {background-color: pink;}
+}
+
+	</style>
+</head>
+
+<body>
+	<audio>
+		<source src="Jingle%Bells.mp3" type="audio/mp3">
+	</audio>
+
+	<div id="main_content" class = 'animate-wobble bg-purple-200'>
+
+		
+			<header role = "banner" class = "relative"> 
+				<img src = "https://static.vecteezy.com/system/resources/previews/009/345/306/original/christmas-social-media-banner-with-realistic-pine-leaves-xmas-banner-with-colorful-balls-snowflakes-merry-christmas-banner-decoration-elements-with-snowflakes-christmas-balls-and-typography-free-png.png" id = "image" alt = 'image'>
+				</header> 
+		
+				<nav >
+					<ul class = 'bg-purple-200 ' style = 'display: flex; justify-content: center; list-style: none; margin: 0; padding: 0;'>
+					<li> <a href = 'index.html'>Home</a></li>
+					<li> <a href = 'contact.html'>Contact us </a></li>
+					<li> <a href = 'deals.html'>Today &apos;s s Deal </a></li>
+					</ul>
+				</nav> 
+				<h1 class = ' animate-tada text-green-400 text-center font-bold'>Shop our best holiday deals online</h1>
+			<table>
+				<tr>
+				  <th colspan="2" class = 'animate-pulse font-mono'>Items</th>
+				  <th class = 'animate-pulse font-mono'>Original Price</th>
+				  <th class = 'animate-pulse font-mono'>Today's Deal</th>
+				</tr>
+				<tr>
+				  <td rowspan="2" class = 'font-mono'>Cozy items</td>
+				  <td class = 'font-mono'>Christmas Mug</td>
+				  <td>$20</td>
+				  <td>$15</td>
+				</tr>
+				<tr>
+				  <td class = 'font-mono'>Christmas Sweater</td>
+				  <td>$90</td>
+				  <td>$70</td>
+				</tr>
+				<tr>
+				  <td rowspan="2" class = 'font-mono'>Wow your friends</td>
+				  <td>iPhone</td>
+				  <td>$1000</td>
+				  <td>$800</td>
+				</tr>
+				<tr>
+				  <td class = 'font-mono'>Christmas Cat</td>
+				  <td>$900</td>
+				  <td>$700</td>
+				</tr>
+				<tr>
+				  <td rowspan="1" class = 'font-mono'>Furniture</td>
+				  <td class = 'font-mono'>Christmas Tree</td>
+				  <td>$100</td>
+				  <td>$80</td>
+				</tr>
+			  </table>
+		</div>
+		<div id = 'deals' class = 'bg-blue-200'>
+			<div class = 'fdeals bg-purple-200 fdeals'>
+				<img src = 'https://www.samovartea.com/wp-content/uploads/2019/10/Chai-Mug-Side-View-1.jpg' class="h-200 w-100" alt = 'image'> <h3>Chirstmas mug!!</h3><br> 25% Discount
+			</div>
+			<div  class = 'fdeals bg-purple-200 fdeals'>
+				<img src = 'https://cdn.media.amplience.net/i/partycity/P899513?$large$&fmt=auto&qlt=default' class="h-200 w-100"  alt = 'image'><h3>Christmas sweater!!</h3><br>23% Discount
+			</div>
+			<div class = 'fdeals bg-purple-200 fdeals'>
+				<img src = 'https://static.displate.com/857x1200/displate/2019-12-07/3cc48cd3cc84e74145caba17f60d6085_7083bfa02f4391d188680a1f32338601.jpg' class="h-200 w-100"  alt = 'image'><h3>Christmas Cat!!</h3> <br>23% Discount
+				
+			</div>
+			<div class = 'fdeals bg-purple-200 fdeals'>
+					<img src = 'https://store.storeimages.cdn-apple.com/4982/as-images.apple.com/is/iphone-13-pink-select-2021?wid=940&hei=1112&fmt=png-alpha&.v=1645572315935' class="h-200 w-100"  alt = 'image'><h3>Iphone!!</h3> <br>20% Discount
+
+			</div>
+			<div  class = 'fdeals bg-purple-200'>
+				<img src = 'http://cdn.shopify.com/s/files/1/0130/8226/3616/products/KOC2021TreesVertical-1.jpg?v=1663977558' class="h-200 w-100"  alt = 'image' ><h3>Christmas Tree</h3><br>20% Discount
+
+			</div>
+		</div>
+	<footer class = 'text-center'>
+		<p> &copy; Giulio Martini</p>
+	</footer>
+	<a href="http://validator.w3.org/check?uri=referer">Validate</a> 	 
+</body>
+</html>

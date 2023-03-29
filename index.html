@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+
+<html lang="en">
+<head>
+	<meta charset="utf-8" />
+	<title>Christmas Store</title>
+	<link rel ="stylesheet" href="my_preprocessed_style.scss" type="text/css"> 
+	<link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.0.3/dist/tailwind.min.css" rel="stylesheet">
+
+
+
+
+
+	<style>
+		div{
+    width: 100%;
+	height: 100%;
+}
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: lightblue;
+    display:flex;
+  }
+
+  li {
+    float: left;
+    margin: 5px;
+    display:flex;
+  }
+  li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    margin:2%;
+  }
+  
+  li:hover{
+    background-color: blueviolet;
+  }
+  li a:hover {
+    background-color: lightblue;
+  }  
+
+  footer{
+    text-align: center;
+  }
+  
+  .grid_image_i{
+    height : 200px;
+    width: 160px;
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 50%;
+  }
+  #cards{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  #fdeals{
+  border: 4px solid rgb(255, 181, 255);
+  width: 95%;
+  padding: 1px;
+  margin-left: 1%;
+}
+#image{
+    height: 120px;
+    width: 100%;
+  }
+	</style>
+
+
+
+
+
+
+
+
+
+</head>
+
+<body>
+
+	<div id = 'main_tag' class = 'bg-purple-200'>
+	<header role = "banner" class = 'relative'> 
+		<img src = https://static.vecteezy.com/system/resources/previews/009/345/306/original/christmas-social-media-banner-with-realistic-pine-leaves-xmas-banner-with-colorful-balls-snowflakes-merry-christmas-banner-decoration-elements-with-snowflakes-christmas-balls-and-typography-free-png.png id = "image" alt = 'image'>
+	</header> 
+		<nav class = 'place-items-center'>
+			<ul class = 'bg-purple-200 place-items-center' style = 'display: flex; justify-content: center; list-style: none; margin: 0; padding: 0;'>
+			<li> <a href = 'index.html'>Home </a></li>
+			<li> <a href = 'contact.html'>Contact us </a></li>
+			<li> <a href = 'deals.html'>Today &apos; s Deal</a></li>
+			</ul>
+		</nav>
+		<h2  class = 'text-center text-purple-800'>Product Categories </h2>
+		<div id = 'cards' class = 'bg-purple-200'>
+			
+			<div class = 'grid_element border-black-200'>
+				<div class = 'border-black-200 grid_image border-black-200 fdeals' >
+				<img src = 'https://assets.epicurious.com/photos/61eb09dfb37c8d2963dd7bde/1:1/w_2849,h_2849,c_limit/HotCocoaForOne_RECIPE_012022_086_VOG_final.jpg' alt = 'image' class = 'grid_image_i text-center'>
+				<p class = 'text-center'><strong>Christmas Mug!</strong><br> Get the perfect Christmas mug for your dad, mom, or any of your grandparents!</p>
+			
+				</div>
+			</div>
+			<div class = 'grid_element border-black-200 fdeals'>
+				<div class = 'grid_image text-center'>
+				<img src = 'https://images.fun.com/products/67032/1-1/adult-santa-candy-cane-ugly-christmas-sweater.jpg' class = 'grid_image_i text-center' alt = 'image'>
+				<p class = 'text-center'><strong>Ugly Sweater!</strong><br> Who doesn't need an ugly Christmas sweater for Christmas?
+				</div>
+			</div>
+			<div class = 'grid_element border-black-200 fdeals'>
+				<div class = 'grid_image'>
+					<img src = 'http://cdn.shopify.com/s/files/1/0130/8226/3616/products/KOC2021TreesVertical-1.jpg?v=1663977558' class = 'grid_image_i text-center' alt = 'image'>
+					<p class = 'text-center'><strong>Pink Christmas Tree!</strong><br> Your friends will DEFINETLY envy you for having <br> the MOST chic Christmas tree of the century.
+						
+
+				</div>	
+	
+			</div>
+
+		</div>
+    <footer class = 'text-center'>
+		
+      <p> &copy;  Giulio Martini</p>
+    </footer >
+	 </div>
+   <div>
+    <a href="http://validator.w3.org/check?uri=referer">Validate</a> 
+  </div>
+</body>
+</html>
